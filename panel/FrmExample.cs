@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,14 +21,7 @@ namespace panel
     public partial class FrmExample : Form
     {
 
-        private List<PnlHeader> pnlHeader = new List<PnlHeader>();
-        private PnlFooter pnlFooter;
-        private PnlMain pnlMain;
-        private PnlNews pnlNews;
-        private PnlAbout pnlAbout;
-        private PnlLinks pnlLinks;
-        private PnlAds pnlAds;
-        private PnlComboBoxes pnlComboBoxes;
+       
 
         
         public FrmExample()
@@ -44,36 +38,55 @@ namespace panel
 
         }
 
-        private void cmbBoxHeader_SelectedIndexChanged(object sender, EventArgs e)
+       
+        public void eraseCurrentHeader()
         {
-            
+            Control cautat = null;
+
+            foreach(Control aux in this.Controls)
+            {
+                if (aux.Name.ToLower().Contains("header"))
+                {
+                    Debug.WriteLine("aici");
+
+                    cautat = aux;
+                }
+            }
+
+            if (cautat is Panel)
+            {
+                this.Controls.Remove(cautat);
+            }
+           
         }
 
         private void setFirstPage()
         {
-            //pnlHeader = new PnlHeader(this);
-            //this.Controls.Add(pnlHeader);
+            //this.Controls.Add(new PnlHeader(this));
 
-            pnlFooter = new PnlFooter(this);
-            this.Controls.Add(pnlFooter);
+            //eraseCurrentHeader();
 
-            pnlMain = new PnlMain(this);
-            this.Controls.Add(pnlMain);
+            //this.Controls.Add(new PnlHeader2(this));
+            //eraseCurrentHeader();
 
-            pnlNews = new PnlNews(this);
-            this.Controls.Add(pnlNews);
+            //this.Controls.Add(new PnlHeader3(this));
+            //eraseCurrentHeader();
 
-            pnlAbout = new PnlAbout(this);
-            this.Controls.Add(pnlAbout);
+            this.Controls.Add(new PnlHeader4(this));
 
-            pnlAds = new PnlAds(this);
-            this.Controls.Add(pnlAds);
+            this.Controls.Add(new PnlFooter(this));
 
-            pnlLinks = new PnlLinks(this);
-            this.Controls.Add(pnlLinks);
+            this.Controls.Add(new PnlMain(this));
 
-            pnlComboBoxes = new PnlComboBoxes(this);
-            this.Controls.Add(pnlComboBoxes);
+            this.Controls.Add(new PnlNews(this));
+
+            this.Controls.Add(new PnlAbout(this));
+
+            this.Controls.Add(new PnlAds(this));
+
+            this.Controls.Add(new PnlLinks(this));
+
+            this.Controls.Add(new PnlComboBoxes(this));
         }
     }
 }

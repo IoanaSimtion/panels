@@ -10,9 +10,9 @@ namespace panel.header
     {
         public PnlHeader3(Form form) : base(form)
         {
-            Label = "HEADER3";
+            base.Label = "HEADER3";
 
-            Name = "pnlHeader3";
+            base.Name = "pnlHeader3";
 
             base.BackColor = Color.RoyalBlue;
         }
