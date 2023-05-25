@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panel
+namespace panel.header
 {
-    internal class PnlHeader2:PnlHeader
+    internal class PnlHeader2 : PnlHeader
     {
 
-        
+
         public PnlHeader2(Form form) : base(form)
         {
 
-            base.Label = "HEADER2";
+            Label = "HEADER2";
 
-            base.Name = "pnlHeader2";
+            Name = "pnlHeader2";
 
             base.BackColor = Color.SlateBlue;
         }

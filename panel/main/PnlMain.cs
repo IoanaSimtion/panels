@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panel
+namespace panel.main
 {
     internal class PnlMain : Panel
     {
@@ -20,13 +20,13 @@ namespace panel
             label.Width = 47;
 
             base.BackColor = Color.LightBlue;
-            base.Location = new Point(0,73) ;
-            base.Width = 388;
-            base.Height = 377 / 2;
-            base.Name = "pnlMain";
+            Location = new Point(0, 73);
+            Width = 388;
+            Height = 377 / 2;
+            Name = "pnlMain";
             base.Anchor = AnchorStyles.Left | AnchorStyles.Top;
             //base.Dock = DockStyle.Fill;
-            base.Controls.Add(label);
+            Controls.Add(label);
         }
     }
 }

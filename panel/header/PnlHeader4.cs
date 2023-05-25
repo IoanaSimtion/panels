@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panel
+namespace panel.header
 {
-    internal class PnlHeader4:PnlHeader
+    internal class PnlHeader4 : PnlHeader
     {
         public PnlHeader4(Form form) : base(form)
         {
-            this.Label = "HEADER4";
+            Label = "HEADER4";
 
-            base.Name = "pnlHeader4";
+            Name = "pnlHeader4";
 
             base.BackColor = Color.Aqua;
         }

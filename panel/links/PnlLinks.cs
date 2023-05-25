@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panel
+namespace panel.links
 {
     internal class PnlLinks : Panel
     {
@@ -17,12 +17,12 @@ namespace panel
             label.Size = new Size(100, 100);
 
             base.BackColor = Color.Orchid;
-            base.Name = "pnlLinks";
-            base.Location = new Point(388, 100);
-            base.Size = new Size(214, 100);
+            Name = "pnlLinks";
+            Location = new Point(388, 100);
+            Size = new Size(214, 100);
             base.Anchor = AnchorStyles.Left | AnchorStyles.Top;
             //base.Dock = DockStyle.Fill;
-            base.Controls.Add(label);
+            Controls.Add(label);
 
         }
     }

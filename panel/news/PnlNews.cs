@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panel
+namespace panel.news
 {
     internal class PnlNews : Panel
     {
@@ -18,13 +18,13 @@ namespace panel
             label.Size = new Size(100, 100);
 
             base.BackColor = Color.Orchid;
-            base.Name = "pnlNews";
-            base.Location = new Point(586, 21);
-            base.Size = new Size(214, 113);
+            Name = "pnlNews";
+            Location = new Point(586, 21);
+            Size = new Size(214, 113);
             base.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top;
-            base.Controls.Add(label);
+            Controls.Add(label);
 
         }
-        
+
     }
 }

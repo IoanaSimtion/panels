@@ -1,4 +1,11 @@
-﻿using System;
+﻿using panel.about;
+using panel.ads;
+using panel.footer;
+using panel.header;
+using panel.links;
+using panel.main;
+using panel.news;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +20,7 @@ namespace panel
     public partial class FrmExample : Form
     {
 
-        private PnlHeader pnlHeader;
+        private List<PnlHeader> pnlHeader = new List<PnlHeader>();
         private PnlFooter pnlFooter;
         private PnlMain pnlMain;
         private PnlNews pnlNews;
@@ -44,8 +51,8 @@ namespace panel
 
         private void setFirstPage()
         {
-            pnlHeader = new PnlHeader(this);
-            this.Controls.Add(pnlHeader);
+            //pnlHeader = new PnlHeader(this);
+            //this.Controls.Add(pnlHeader);
 
             pnlFooter = new PnlFooter(this);
             this.Controls.Add(pnlFooter);
