@@ -12,27 +12,23 @@ namespace panel.header
 
         protected Label label;
 
-        public PnlHeader(Form form)
+        public PnlHeader()
         {
 
             Debug.WriteLine("Sunt in header baza");
 
             label = new Label();
-            label.Location = new Point(form.Width / 2, 20);
             label.Text = "HEADER";
             label.Height = 20;
-           
+            label.Dock = DockStyle.Fill;
+            label.TextAlign = ContentAlignment.TopCenter;
 
-            base.BackColor = Color.MediumPurple;
-            Location = new Point(0, 0);
-            Width = 800;
-            Height = 73;
             Name = "pnlHeader";
-            Controls.Add(label);
-            base.Anchor = AnchorStyles.Right | AnchorStyles.Left;
+            base.BackColor = Color.MediumPurple;
+            Height = 100;           
             base.Dock = DockStyle.Top;
-
-
+            Controls.Add(label);
+            
         }
         public string Label
         {

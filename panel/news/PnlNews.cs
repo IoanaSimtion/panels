@@ -10,18 +10,18 @@ namespace panel.news
     {
         private Label label;
 
-        public PnlNews(Form from)
+        public PnlNews()
         {
             label = new Label();
             label.Text = "NEWS";
-            label.Location = new Point(81, 68);
+            //label.Location = new Point(81, 68);
             label.Size = new Size(100, 100);
+            label.Dock = DockStyle.Fill;
+            label.TextAlign = ContentAlignment.TopCenter;
 
             base.BackColor = Color.Orchid;
             Name = "pnlNews";
-            Location = new Point(586, 21);
-            Size = new Size(214, 113);
-            base.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top;
+            base.Dock = DockStyle.Fill;
             Controls.Add(label);
 
         }

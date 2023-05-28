@@ -11,7 +11,7 @@ namespace panel.header
     {
 
 
-        public PnlHeader2(Form form) : base(form)
+        public PnlHeader2()
         {
             Debug.WriteLine(base.label.Text);
             base.ResetText();

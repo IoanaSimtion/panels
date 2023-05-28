@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panel.links
+namespace panel
 {
-    internal class PnlLinks4 : PnlLinks
+    internal class PanelPrincipal
     {
-        public PnlLinks4()
-        {
-
-        }
     }
 }

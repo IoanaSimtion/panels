@@ -9,19 +9,19 @@ namespace panel.links
     internal class PnlLinks : Panel
     {
         private Label label;
-        public PnlLinks(Form from)
+        public PnlLinks()
         {
             label = new Label();
             label.Text = "LINKS";
-            label.Location = new Point(81, 50);
+            //label.Location = new Point(81, 50);
             label.Size = new Size(100, 100);
+            label.Dock = DockStyle.Fill;
+            label.TextAlign = ContentAlignment.TopCenter;
 
             base.BackColor = Color.Orchid;
             Name = "pnlLinks";
-            Location = new Point(388, 100);
-            Size = new Size(214, 100);
-            base.Anchor = AnchorStyles.Left | AnchorStyles.Top;
-            //base.Dock = DockStyle.Fill;
+          
+            base.Dock = DockStyle.Fill;
             Controls.Add(label);
 
         }

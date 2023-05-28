@@ -10,19 +10,21 @@ namespace panel.ads
     {
         private Label label;
 
-        public PnlAds(Form from)
+        public PnlAds()
         {
             label = new Label();
             label.Text = "ADS";
-            label.Location = new Point(81, 50);
+            //label.Location = new Point(81, 50);
             label.Size = new Size(100, 100);
+            label.Dock = DockStyle.Fill;
+            label.TextAlign = ContentAlignment.TopCenter;
 
             base.BackColor = Color.Plum;
             Name = "pnlAds";
             Location = new Point(586, 100);
-            Size = new Size(214, 100);
-            base.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top;
-            //base.Dock = DockStyle.Fill;
+           
+            //base.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top;
+            this.Dock = DockStyle.Fill;
             Controls.Add(label);
 
         }

@@ -12,7 +12,9 @@ namespace panel
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             //Application.Run(new Form1());
-            Application.Run(new FrmExample());
+            //Application.Run(new FrmExample());
+            //Application.Run(new FrmExample2());
+            Application.Run(new Example3());
         }
     }
 }

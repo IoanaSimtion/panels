@@ -8,7 +8,7 @@ namespace panel.header
 {
     internal class PnlHeader4 : PnlHeader
     {
-        public PnlHeader4(Form form) : base(form)
+        public PnlHeader4()
         {
             base.Label = "HEADER4";
 

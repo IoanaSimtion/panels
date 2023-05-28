@@ -8,7 +8,7 @@ namespace panel.links
 {
     internal class PnlLinks3 :PnlLinks
     {
-        public PnlLinks3(Form form) : base(form)
+        public PnlLinks3()
         {
 
         }

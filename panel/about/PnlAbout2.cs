@@ -8,7 +8,7 @@ namespace panel.about
 {
     internal class PnlAbout2 :PnlAbout
     {
-        public PnlAbout2(Form form) : base(form)
+        public PnlAbout2()
         {
 
         }

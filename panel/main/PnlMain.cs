@@ -10,22 +10,21 @@ namespace panel.main
     {
 
         private Label label;
-        public PnlMain(Form form)
+        public PnlMain(Panel panelMain)
         {
             label = new Label();
 
             label.Text = "MAIN";
-            label.Location = new Point(159, 17);
+            label.AutoSize = false;
             label.Height = 20;
             label.Width = 47;
+            label.Dock = DockStyle.Fill;
+            label.TextAlign = ContentAlignment.TopCenter;
 
             base.BackColor = Color.LightBlue;
-            Location = new Point(0, 73);
-            Width = 388;
-            Height = 377 / 2;
+          
             Name = "pnlMain";
-            base.Anchor = AnchorStyles.Left | AnchorStyles.Top;
-            //base.Dock = DockStyle.Fill;
+            base.Dock = DockStyle.Fill;
             Controls.Add(label);
         }
     }

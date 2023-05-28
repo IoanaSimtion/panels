@@ -8,7 +8,7 @@ namespace panel.news
 {
     internal class PnlNews2 : PnlNews
     {
-        public PnlNews2(Form form) : base(form)
+        public PnlNews2()
         {
 
         }

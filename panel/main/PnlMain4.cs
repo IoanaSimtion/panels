@@ -8,7 +8,7 @@ namespace panel.main
 {
     internal class PnlMain4 : PnlMain
     {
-        public PnlMain4(Form form) : base(form)
+        public PnlMain4(Panel panelMain) : base(panelMain)
         {
 
         }

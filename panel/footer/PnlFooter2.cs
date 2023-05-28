@@ -8,7 +8,7 @@ namespace panel.footer
 {
     internal class PnlFooter2 : PnlFooter
     {
-        public PnlFooter2(Form form) : base(form)
+        public PnlFooter2(Example3 ex3):base(ex3)
         {
 
         }

@@ -8,7 +8,7 @@ namespace panel.ads
 {
     internal class PnlAds3 : PnlAds
     {
-        public PnlAds3(Form form) : base(form)
+        public PnlAds3()
         {
 
         }
