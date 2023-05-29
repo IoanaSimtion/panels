@@ -15,7 +15,7 @@ namespace panel.header
         {
             Debug.WriteLine(base.label.Text);
             base.ResetText();
-            base.label.Text = "HEADER2 asdasdsa asdsadsa";
+            base.label.Text = "HEADER2";
 
             base.Name = "pnlHeader2";
 
