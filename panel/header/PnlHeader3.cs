@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace panel
+namespace panel.header
 {
-    internal class PnlHeader3:PnlHeader
+    internal class PnlHeader3 : PnlHeader
     {
-        public PnlHeader3(Form form) : base(form)
+        public PnlHeader3()
         {
-            this.Label = "HEADER3";
+            base.Label = "HEADER3";
 
             base.Name = "pnlHeader3";
 
